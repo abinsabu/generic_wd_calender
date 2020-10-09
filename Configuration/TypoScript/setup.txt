@@ -1,0 +1,38 @@
+plugin.tx_Genwdcalender {
+	view {
+		templateRootPath = {$plugin.tx_Genwdcalender.view.templateRootPath}
+		partialRootPath = {$plugin.tx_Genwdcalender.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_Genwdcalender.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_Genwdcalender.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+		GoogleApiKey = {$plugin.tx_Genwdcalender.settings.GoogleApiKey}
+		DefaultGoogleMarkerPosition = {$plugin.tx_Genwdcalender.settings.DefaultGoogleMarkerPosition}
+	}
+}
+
+plugin.tx_Genwdcalender._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-Gen-wd-calender table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-Gen-wd-calender table th {
+		font-weight:bold;
+	}
+
+	.tx-Gen-wd-calender table td {
+		vertical-align:top;
+	}
+)
