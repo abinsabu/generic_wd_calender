@@ -1,0 +1,20 @@
+plugin.tx_Genwdcalender {
+	view {
+		# cat=plugin.tx_Genwdcalender/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:Gen_wd_calender/Resources/Private/Templates/
+		# cat=plugin.tx_Genwdcalender/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:Gen_wd_calender/Resources/Private/Partials/
+		# cat=plugin.tx_Genwdcalender/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:Gen_wd_calender/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_Genwdcalender//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+	settings {
+		# cat=plugin.tx_Genwdcalender//a; type=string; label= Google Api Key
+		GoogleApiKey = 
+		# cat=plugin.tx_Genwdcalender//a; type=string; label= Default google marker position
+		DefaultGoogleMarkerPosition = 
+	}
+}
